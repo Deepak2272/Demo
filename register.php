@@ -28,7 +28,7 @@ if(isset($_POST['submit'])){
          if($insert){
             move_uploaded_file($image_tmp_name, $image_folder);
             $message[] = 'registered successfully!';
-            header('location:login.php');
+            header('location:index.php');
          }else{
             $message[] = 'registeration failed!';
          }
@@ -73,7 +73,7 @@ background: linear-gradient(to bottom right, rgba(240, 147, 251, 1), rgba(245, 8
       <input type="password" name="cpassword" placeholder="confirm password" class="box" required>
       <input type="file" name="image" class="box" accept="image/jpg, image/jpeg, image/png">
       <input type="submit" name="submit" value="register now" class="btn">
-      <p>already have an account? <a href="login.php">login now</a></p>
+      <p>already have an account? <a href="index.php">login now</a></p>
    </form>
 
 </div>
